@@ -1,4 +1,4 @@
-#wcheck_wifi
+#check_wifi
 
 Set up a cron check of wifi connectivity (and reset if it dropped)
 
