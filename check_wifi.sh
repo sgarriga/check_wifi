@@ -1,6 +1,7 @@
 #!/bin/bash
 #
-ping -c4 192.168.0.1 > /dev/null
+IP=`ip route | grep default | cut -d " " -f 3`
+ping -c4 ${IP}  > /dev/null
 if [ $? != 0 ] 
 then
   echo "No network connection, restarting wlan0"
